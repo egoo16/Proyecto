@@ -1,0 +1,8 @@
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\bin\Debug\Presentacion.dll
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\bin\Debug\Presentacion.pdb
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\obj\Debug\Presentacion.Splath.resources
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\obj\Debug\Presentacion.dll
+D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Presentacion\obj\Debug\Presentacion.pdb
