@@ -36,7 +36,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,18 +99,10 @@
             this.labelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl4.Location = new System.Drawing.Point(486, 280);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(75, 13);
+            this.labelControl4.Size = new System.Drawing.Size(138, 13);
             this.labelControl4.TabIndex = 10;
-            this.labelControl4.Text = "Cristhian Reyes";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl5.Location = new System.Drawing.Point(486, 298);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(55, 13);
-            this.labelControl5.TabIndex = 11;
-            this.labelControl5.Text = "Ghunter SG";
+            this.labelControl4.Text = "Cristhian Reyes   201108186";
+            this.labelControl4.Click += new System.EventHandler(this.labelControl4_Click);
             // 
             // pictureBox1
             // 
@@ -140,7 +131,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(648, 362);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
@@ -170,7 +160,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
         private System.Windows.Forms.Label label1;
     }
 }

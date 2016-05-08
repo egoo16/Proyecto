@@ -30,6 +30,7 @@ namespace Splath
             frmCategoria frm = new frmCategoria();
             frm.transaccion = true;
             frm.ShowDialog();
+            cargarDatosCategoria();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

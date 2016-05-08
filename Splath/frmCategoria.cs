@@ -62,6 +62,7 @@ namespace Splath
                     lnobj.ActualizarCategoria(codigo, nombre, descripcion);
                 }
                 MessageBox.Show("La Categoria se inserto correctamente", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
                 this.Close();
         }
     }
