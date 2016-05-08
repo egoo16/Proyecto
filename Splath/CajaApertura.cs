@@ -21,5 +21,22 @@ namespace Splath
         {
             label1.Text = DateTime.Now.ToString();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Desea Gardar los cambios", "Apertura de Caja", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                frmCaja fr = new frmCaja();
+                fr.apertura = true;
+                this.Close();
+            }
+            
+        }
     }
 }

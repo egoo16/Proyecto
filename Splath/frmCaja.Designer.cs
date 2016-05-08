@@ -33,7 +33,18 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aperturaDeCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cierreDeCajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtnit = new DevExpress.XtraEditors.TextEdit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,6 +71,7 @@
             this.aperturaDeCajaToolStripMenuItem.Name = "aperturaDeCajaToolStripMenuItem";
             this.aperturaDeCajaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.aperturaDeCajaToolStripMenuItem.Text = "Apertura de Caja";
+            this.aperturaDeCajaToolStripMenuItem.Click += new System.EventHandler(this.aperturaDeCajaToolStripMenuItem_Click);
             // 
             // cierreDeCajaToolStripMenuItem
             // 
@@ -67,18 +79,110 @@
             this.cierreDeCajaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.cierreDeCajaToolStripMenuItem.Text = "Cierre de Caja";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(171, 19);
+            this.label2.TabIndex = 96;
+            this.label2.Text = "Surticasa - Tienda";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(466, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 19);
+            this.label1.TabIndex = 97;
+            this.label1.Text = "Date";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 18);
+            this.label4.TabIndex = 101;
+            this.label4.Text = "Nit";
+            // 
+            // txtnit
+            // 
+            this.txtnit.Location = new System.Drawing.Point(44, 75);
+            this.txtnit.Name = "txtnit";
+            this.txtnit.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnit.Properties.Appearance.Options.UseFont = true;
+            this.txtnit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.txtnit.Size = new System.Drawing.Size(99, 24);
+            this.txtnit.TabIndex = 100;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(170, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 18);
+            this.label3.TabIndex = 103;
+            this.label3.Text = "Nit";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(205, 75);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.textEdit1.Size = new System.Drawing.Size(114, 24);
+            this.textEdit1.TabIndex = 102;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(335, 81);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 18);
+            this.label5.TabIndex = 105;
+            this.label5.Text = "Nit";
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(370, 75);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.textEdit2.Size = new System.Drawing.Size(114, 24);
+            this.textEdit2.TabIndex = 104;
+            // 
             // frmCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 356);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtnit);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmCaja";
-            this.Text = "SurtiCasa - Sistema de Caja";
+            this.Text = "x";
+            this.Load += new System.EventHandler(this.frmCaja_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtnit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,5 +194,13 @@
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aperturaDeCajaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cierreDeCajaToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private DevExpress.XtraEditors.TextEdit txtnit;
+        private System.Windows.Forms.Label label3;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private System.Windows.Forms.Label label5;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
     }
 }

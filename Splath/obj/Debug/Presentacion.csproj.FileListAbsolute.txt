@@ -54,3 +54,8 @@ D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Propertie
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Splath.resources
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe.licenses
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.CajaApertura.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoUsuarios.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmrol.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmUsuarios.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ListadoSucursales.resources
