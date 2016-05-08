@@ -26,3 +26,31 @@ D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\DAL.dll
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\BLL.pdb
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\DAL.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\Splath.exe.config
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\Splath.exe
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\Splath.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\BLL.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\DAL.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\BLL.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\DAL.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmCaja.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmCategoria.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmIngresoProducto.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoCategoría.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoMarca.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoPresentacion.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoProducto.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoProveedor.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmMarca.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmMenuPrincipal.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmPresentacion.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmprincipal.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmproducto.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmProveedor.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Properties.Resources.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Splath.resources
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe.licenses

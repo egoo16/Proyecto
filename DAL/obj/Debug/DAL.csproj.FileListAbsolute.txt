@@ -4,3 +4,9 @@ D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\DAL\bin
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\DAL\obj\Debug\DAL.dll
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\DAL\obj\Debug\DAL.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\bin\Debug\DAL.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\bin\Debug\DAL.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\bin\Debug\Oracle.DataAccess.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.pdb

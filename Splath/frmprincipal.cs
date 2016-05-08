@@ -67,5 +67,19 @@ namespace Splath
             frm.Show();
             btncc.Visible = true;
         }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmListadoUsuarios frm = new frmListadoUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmUsuarios frm = new frmUsuarios();
+            //frm.transaccion = true;
+            frm.ShowDialog();
+        }
     }
 }

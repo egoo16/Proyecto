@@ -64,5 +64,30 @@ namespace Splath
                 MessageBox.Show("La Categoria se inserto correctamente", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
