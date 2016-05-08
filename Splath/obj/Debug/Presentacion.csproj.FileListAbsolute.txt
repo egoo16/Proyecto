@@ -26,3 +26,6 @@ D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\DAL.dll
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\BLL.pdb
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\DAL.pdb
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\bin\Debug\Splath.exe.config
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.pdb

@@ -35,6 +35,8 @@ namespace Splath
         private void frmListadoMarca_Load(object sender, EventArgs e)
         {
 
+
+
         }
     }
 }
