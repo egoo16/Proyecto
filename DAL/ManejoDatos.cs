@@ -19,11 +19,13 @@ namespace DAL
             this.oCadena = oCadena;
         }
 
+        #region Categoria
         public DataTable consultarCategoria()
         {
             Conexion obj = new Conexion(this.oCadena);
             return obj.consultarOut("listar_categoria");
         }
+
         public void insertarCategoria(string nombre, string
             descripcion)
         {
@@ -60,6 +62,31 @@ namespace DAL
             obj.conectar();
             obj.ejecutarTransaccion("eliminar_categoria",
              new object[] { new OracleParameter("IdCategoria",id)
+                });
+            obj.desconectar();
+        }
+        #endregion
+
+        #region Proveedor
+        public DataTable consultarProveedor()
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            return obj.consultarOut("listar_proveedor");
+        }
+
+        public void insertarProveedor(string nombre, string direccion, string
+            telefono, string correo, DateTime fechaIngreso)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("insertar_categoria",
+             new object[] { new OracleParameter("nombre",nombre),
+                 new OracleParameter("direccion",direccion),
+                 new OracleParameter("telefono", telefono),
+                 new OracleParameter("correo", correo),
+                 new OracleParameter("fechaingreso", fechaIngreso),
+                 new OracleParameter("estado","1")
+                
                 });
             obj.desconectar();
         }
