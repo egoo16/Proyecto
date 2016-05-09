@@ -48,12 +48,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtProd = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label11 = new System.Windows.Forms.Label();
             this.txtCant = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtProd = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
@@ -239,11 +239,11 @@
             this.label9.BackColor = System.Drawing.Color.Black;
             this.label9.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label9.Location = new System.Drawing.Point(674, 95);
+            this.label9.Location = new System.Drawing.Point(672, 96);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(95, 34);
             this.label9.TabIndex = 111;
-            this.label9.Text = "Label";
+            this.label9.Text = "00.00";
             // 
             // groupControl1
             // 
@@ -260,39 +260,12 @@
             this.groupControl1.TabIndex = 112;
             this.groupControl1.Text = "Productos";
             // 
-            // label10
+            // txtCant
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(5, 20);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 18);
-            this.label10.TabIndex = 113;
-            this.label10.Text = "Producto";
-            // 
-            // txtProd
-            // 
-            this.txtProd.Location = new System.Drawing.Point(89, 20);
-            this.txtProd.Name = "txtProd";
-            this.txtProd.Size = new System.Drawing.Size(100, 21);
-            this.txtProd.TabIndex = 114;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(197, 20);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 115;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(358, 150);
-            this.dataGridView1.TabIndex = 116;
+            this.txtCant.Location = new System.Drawing.Point(358, 20);
+            this.txtCant.Name = "txtCant";
+            this.txtCant.Size = new System.Drawing.Size(34, 21);
+            this.txtCant.TabIndex = 118;
             // 
             // label11
             // 
@@ -304,12 +277,39 @@
             this.label11.TabIndex = 117;
             this.label11.Text = "Cantidad";
             // 
-            // txtCant
+            // dataGridView1
             // 
-            this.txtCant.Location = new System.Drawing.Point(358, 20);
-            this.txtCant.Name = "txtCant";
-            this.txtCant.Size = new System.Drawing.Size(34, 21);
-            this.txtCant.TabIndex = 118;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 49);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(358, 150);
+            this.dataGridView1.TabIndex = 116;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(197, 20);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 115;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // txtProd
+            // 
+            this.txtProd.Location = new System.Drawing.Point(89, 20);
+            this.txtProd.Name = "txtProd";
+            this.txtProd.Size = new System.Drawing.Size(100, 21);
+            this.txtProd.TabIndex = 114;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(5, 20);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 18);
+            this.label10.TabIndex = 113;
+            this.label10.Text = "Producto";
             // 
             // groupControl2
             // 

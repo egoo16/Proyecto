@@ -61,7 +61,6 @@ namespace BLL
 
                 throw new Exception("Error al Actualizar..." + ex.Message);
             }
-
         }
 
         public void EliminarProducto(int codigo)
