@@ -117,3 +117,4 @@ X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Splath.resources
 X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe.licenses
 >>>>>>> origin/master
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ValidacionAdmin.resources

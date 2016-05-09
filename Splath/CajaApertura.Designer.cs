@@ -145,7 +145,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "CajaApertura";
-            this.Text = "CajaApertura";
+            this.Text = "SurtiCasa - Control de Caja";
             this.Load += new System.EventHandler(this.CajaApertura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCant.Properties)).EndInit();
