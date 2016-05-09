@@ -41,7 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="N_Categoria.cs" />
+<<<<<<< HEAD
     <Compile Include="N_Producto.cs" />
+=======
+    <Compile Include="N_Proveedor.cs" />
+>>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

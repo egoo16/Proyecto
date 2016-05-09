@@ -117,5 +117,13 @@ X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Splath.resources
 X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe.licenses
 >>>>>>> origin/master
+<<<<<<< HEAD
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ValidacionAdmin.resources
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.NotasES.resources
+=======
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.CajaApertura.resources
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoUsuarios.resources
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmrol.resources
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmUsuarios.resources
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ListadoSucursales.resources
+>>>>>>> origin/master
