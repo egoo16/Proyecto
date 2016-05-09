@@ -15,7 +15,7 @@ namespace Splath
 {
     public partial class frmListadoCategoría : Form
     {
-        N_Categoria lnobj = new N_Categoria(ConfigurationManager.ConnectionStrings["Oracle"].ConnectionString);
+        N_Proveedor lnobj = new N_Proveedor(ConfigurationManager.ConnectionStrings["Oracle"].ConnectionString);
         public static DataRow row;
         public static frmListadoCategoría list;
         int codigo;
@@ -30,7 +30,7 @@ namespace Splath
             frmCategoria frm = new frmCategoria();
             frm.transaccion = true;
             frm.ShowDialog();
-            cargarDatosCategoria();
+            cargarDatosProveedor();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -40,12 +40,12 @@ namespace Splath
 
         private void frmListadoCategoría_Load(object sender, EventArgs e)
         {
-            cargarDatosCategoria();
+            cargarDatosProveedor();
         }
 
-        public void cargarDatosCategoria()
+        public void cargarDatosProveedor()
         {
-            gridControl1.DataSource = lnobj.consultarCategoria();
+            gridControl1.DataSource = lnobj.consultarProveedor();
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Splath
             frmCategoria frm = new frmCategoria();
             frm.transaccion = false;
             frm.ShowDialog();
-            cargarDatosCategoria();
+            cargarDatosProveedor();
         }
     }
 }
