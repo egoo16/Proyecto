@@ -47,7 +47,7 @@
             this.gridControl1.Location = new System.Drawing.Point(12, 12);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(723, 304);
+            this.gridControl1.Size = new System.Drawing.Size(722, 304);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -66,7 +66,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnCerrar.Location = new System.Drawing.Point(464, 326);
+            this.btnCerrar.Location = new System.Drawing.Point(398, 333);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(62, 69);
             this.btnCerrar.TabIndex = 14;
@@ -79,7 +79,7 @@
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnEliminar.Location = new System.Drawing.Point(382, 326);
+            this.btnEliminar.Location = new System.Drawing.Point(316, 333);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(62, 69);
             this.btnEliminar.TabIndex = 13;
@@ -90,7 +90,7 @@
             this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnModificar.Location = new System.Drawing.Point(295, 326);
+            this.btnModificar.Location = new System.Drawing.Point(229, 333);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(62, 69);
             this.btnModificar.TabIndex = 12;
@@ -101,7 +101,7 @@
             this.btnNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnNuevo.Location = new System.Drawing.Point(206, 326);
+            this.btnNuevo.Location = new System.Drawing.Point(140, 333);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(62, 69);
             this.btnNuevo.TabIndex = 11;

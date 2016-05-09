@@ -6,6 +6,7 @@ D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\BLL\bin
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\BLL\obj\Debug\BLL.dll
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.dll
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.pdb
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.dll
@@ -14,3 +15,20 @@ D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.pdb
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.dll
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.pdb
+=======
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\bin\Debug\Oracle.DataAccess.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.pdb
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.dll
+D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.pdb
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.dll
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.pdb
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.dll
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.pdb
+X:\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+X:\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.dll
+X:\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.pdb
+>>>>>>> origin/master

@@ -28,5 +28,12 @@ namespace Splath
             frmprincipal frm = new frmprincipal();
             frm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmCaja frm = new frmCaja();
+            frm.Show();
+        }
     }
 }

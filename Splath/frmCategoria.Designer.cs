@@ -46,6 +46,7 @@
             this.txtNombre.Properties.Appearance.Options.UseFont = true;
             this.txtNombre.Size = new System.Drawing.Size(149, 24);
             this.txtNombre.TabIndex = 99;
+            this.txtNombre.EditValueChanged += new System.EventHandler(this.txtNombre_EditValueChanged);
             // 
             // label1
             // 
@@ -56,6 +57,7 @@
             this.label1.Size = new System.Drawing.Size(68, 18);
             this.label1.TabIndex = 98;
             this.label1.Text = "Nombre";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnCancelar
             // 
@@ -65,6 +67,7 @@
             this.btnCancelar.TabIndex = 97;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAceptar
             // 
@@ -84,6 +87,7 @@
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Size = new System.Drawing.Size(176, 24);
             this.textEdit1.TabIndex = 101;
+            this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
             // label2
             // 
@@ -94,6 +98,7 @@
             this.label2.Size = new System.Drawing.Size(98, 18);
             this.label2.TabIndex = 100;
             this.label2.Text = "Descripción";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // frmCategoria
             // 
