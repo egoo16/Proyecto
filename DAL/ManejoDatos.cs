@@ -91,5 +91,33 @@ namespace DAL
             obj.desconectar();
         }
 
+        public void ActualizarProveedor(int id, string nombre, string direccion, string
+            telefono, string correo, DateTime fechaIngreso)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("actualizar_proveedor",
+             new object[] { new OracleParameter("idproveedor",id),
+                 new OracleParameter("nombre",nombre),
+                 new OracleParameter("direccion",direccion),
+                 new OracleParameter("telefono", telefono),
+                 new OracleParameter("correo", correo),
+                 new OracleParameter("fechaingreso", fechaIngreso),
+                 new OracleParameter("estado","1")
+                
+                });
+            obj.desconectar();
+        }
+
+        public void EliminarProveedor(int id)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("eliminar_proveedor",
+             new object[] { new OracleParameter("IdProveedor",id)
+                });
+            obj.desconectar();
+        }
+        #endregion
     }
 }

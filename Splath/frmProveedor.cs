@@ -7,12 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using System.Configuration;
 
 namespace Splath
 {
     public partial class frmProveedor : Form
     {
         public bool transaccion = false;
+        N_Proveedor lnobj = new N_Proveedor(ConfigurationManager.ConnectionStrings["Oracle"].ConnectionString);
+        int codigo;
+
         public frmProveedor()
         {
             InitializeComponent();
@@ -25,7 +30,22 @@ namespace Splath
 
         private void frmProveedor_Load(object sender, EventArgs e)
         {
-
+            if (transaccion)
+            {
+                foreach (Control c in this.Controls)
+                {
+                    if (c.GetType() == typeof(TextBox))
+                    {
+                        ((TextBox)(c)).Text = string.Empty;
+                    }
+                }
+            }
+            else
+            {
+                codigo = Convert.ToInt16(frmListadoCategoría.row[0]);
+                txtNombre.Text = frmListadoCategoría.row[1].ToString();
+                textEdit1.Text = frmListadoCategoría.row[2].ToString();
+            }
         }
 
         private void textEdit5_EditValueChanged(object sender, EventArgs e)

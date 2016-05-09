@@ -32,14 +32,14 @@ namespace BLL
             }
          
         }
-        public void insertarCategoria(string nombre,
-            string descripcion
+        public void insertarProveedor(string nombre, string direccion, string telefono,
+            string correo, DateTime fechaIngreso
            )
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarCategoria(nombre, descripcion);
+                mdobj.insertarProveedor(nombre, direccion, telefono, correo, fechaIngreso);
             }
             catch (Exception ex)
             {
@@ -50,14 +50,14 @@ namespace BLL
         }
 
 
-        public void ActualizarCategoria(int codigo, string nombre,
-           string descripcion
-          )
+        public void ActualizarProveedor(int codigo, string nombre, string direccion, string telefono,
+            string correo, DateTime fechaIngreso
+           )
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarCategoria(codigo, nombre, descripcion);
+                mdobj.ActualizarProveedor(codigo, nombre, direccion, telefono, correo, fechaIngreso);
             }
             catch (Exception ex)
             {
@@ -72,7 +72,7 @@ namespace BLL
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarCategoria (codigo);
+                mdobj.EliminarProveedor (codigo);
             }
             catch (Exception ex)
             {
