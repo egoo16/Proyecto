@@ -38,7 +38,7 @@ namespace Splath
             if (result == DialogResult.Yes)
             {
                 frmCaja caja = new frmCaja();
-                caja.apertura = true();
+                //caja.apertura = true();
                 //ValidacionAdmin frm = new ValidacionAdmin();
                 //frm.ShowDialog();
             }

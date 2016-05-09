@@ -64,5 +64,54 @@ namespace DAL
             obj.desconectar();
         }
 
+        public DataTable consultarProducto()
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            return obj.consultarOut("LISTADOPRODUCTO");
+        }
+
+        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("INSERTAR_PRODUCTO",
+             new object[] { new OracleParameter("IDCATEGORIA",IDCATEGORIA),
+                 new OracleParameter("IDMARCA",IDMARCA),
+                 new OracleParameter("NOMBRE",NOMBRE),
+                 new OracleParameter("DESCRIPCION",DESCRIPCION),
+                 new OracleParameter("ESTADO","1")
+                
+                });
+            obj.desconectar();
+        }
+
+        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("ACTUALIZAR_PRODUCTO",
+             new object[] { new OracleParameter("IdProducto",IdProducto),
+                 new OracleParameter("IDCAT",IDCAT),
+                 new OracleParameter("IDMAR",IDMAR),
+                 new OracleParameter("NOM",NOM),
+                 new OracleParameter("DES",DES),
+                 new OracleParameter("EST","1")
+                
+                });
+            obj.desconectar();
+        }
+
+
+        public void EliminarProducto(int id)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("ELIMINAR_PRODUCTO",
+             new object[] { new OracleParameter("IdProducto",id)
+                });
+            obj.desconectar();
+        }
+
+
     }
 }
