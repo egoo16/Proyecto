@@ -14,3 +14,10 @@ D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.pdb
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.dll
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.pdb
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.dll
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\BLL.pdb
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.dll
+X:\Documentos\GitHub\Proyecto\BLL\bin\Debug\DAL.pdb
+X:\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+X:\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.dll
+X:\Documentos\GitHub\Proyecto\BLL\obj\Debug\BLL.pdb

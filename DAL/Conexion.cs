@@ -19,7 +19,8 @@ namespace DAL
         }
 
         public void conectar()
-        {
+        {   
+            // hola a todos troles XD
             try
             {
                 cnConexion.Open();

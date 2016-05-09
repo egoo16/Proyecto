@@ -10,3 +10,8 @@ D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\bin\Debug\Oracle.DataAccess.d
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.dll
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.pdb
+X:\Documentos\GitHub\Proyecto\DAL\bin\Debug\DAL.dll
+X:\Documentos\GitHub\Proyecto\DAL\bin\Debug\DAL.pdb
+X:\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+X:\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.dll
+X:\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.pdb
