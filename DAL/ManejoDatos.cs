@@ -91,7 +91,7 @@ namespace DAL
             obj.desconectar();
         }
 
-<<<<<<< HEAD
+
         public DataTable consultarProducto()
         {
             Conexion obj = new Conexion(this.oCadena);
@@ -108,7 +108,7 @@ namespace DAL
                  new OracleParameter("NOMBRE",NOMBRE),
                  new OracleParameter("DESCRIPCION",DESCRIPCION),
                  new OracleParameter("ESTADO","1")
-=======
+
         public void ActualizarProveedor(int id, string nombre, string direccion, string
             telefono, string correo, DateTime fechaIngreso)
         {
@@ -122,13 +122,13 @@ namespace DAL
                  new OracleParameter("correo", correo),
                  new OracleParameter("fechaingreso", fechaIngreso),
                  new OracleParameter("estado","1")
->>>>>>> origin/master
+
                 
                 });
             obj.desconectar();
         }
 
-<<<<<<< HEAD
+
         public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
         {
             Conexion obj = new Conexion(this.oCadena);
@@ -157,7 +157,7 @@ namespace DAL
         }
 
 
-=======
+
         public void EliminarProveedor(int id)
         {
             Conexion obj = new Conexion(this.oCadena);
@@ -168,6 +168,6 @@ namespace DAL
             obj.desconectar();
         }
         #endregion
->>>>>>> origin/master
+
     }
 }
