@@ -91,6 +91,7 @@ namespace DAL
             obj.desconectar();
         }
 
+<<<<<<< HEAD
         public void ActualizarProveedor(int id, string nombre, string direccion, string
             telefono, string correo, string fechaIngreso)
         {
@@ -122,6 +123,8 @@ namespace DAL
         #endregion
 
         #region Producto
+=======
+>>>>>>> origin/master
 
         public DataTable consultarProducto()
         {
@@ -139,10 +142,34 @@ namespace DAL
                  new OracleParameter("NOMBRE",NOMBRE),
                  new OracleParameter("DESCRIPCION",DESCRIPCION),
                  new OracleParameter("ESTADO","1")
+<<<<<<< HEAD
                  });
             obj.desconectar();
         }
 
+=======
+
+        public void ActualizarProveedor(int id, string nombre, string direccion, string
+            telefono, string correo, DateTime fechaIngreso)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("actualizar_proveedor",
+             new object[] { new OracleParameter("idproveedor",id),
+                 new OracleParameter("nombre",nombre),
+                 new OracleParameter("direccion",direccion),
+                 new OracleParameter("telefono", telefono),
+                 new OracleParameter("correo", correo),
+                 new OracleParameter("fechaingreso", fechaIngreso),
+                 new OracleParameter("estado","1")
+
+                
+                });
+            obj.desconectar();
+        }
+
+
+>>>>>>> origin/master
         public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
         {
             Conexion obj = new Conexion(this.oCadena);
@@ -169,6 +196,21 @@ namespace DAL
                 });
             obj.desconectar();
         }
+<<<<<<< HEAD
+=======
+
+
+
+        public void EliminarProveedor(int id)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("eliminar_proveedor",
+             new object[] { new OracleParameter("IdProveedor",id)
+                });
+            obj.desconectar();
+        }
+>>>>>>> origin/master
         #endregion
 
     }
