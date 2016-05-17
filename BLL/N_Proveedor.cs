@@ -33,7 +33,7 @@ namespace BLL
          
         }
         public void insertarProveedor(string nombre, string direccion, string telefono,
-            string correo, DateTime fechaIngreso
+            string correo, string fechaIngreso
            )
         {
             try
@@ -51,7 +51,7 @@ namespace BLL
 
 
         public void ActualizarProveedor(int codigo, string nombre, string direccion, string telefono,
-            string correo, DateTime fechaIngreso
+            string correo, string fechaIngreso
            )
         {
             try
@@ -72,7 +72,7 @@ namespace BLL
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProveedor (codigo);
+                mdobj.EliminarProveedor(codigo);
             }
             catch (Exception ex)
             {

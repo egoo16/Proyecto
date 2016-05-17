@@ -71,15 +71,15 @@ namespace DAL
         public DataTable consultarProveedor()
         {
             Conexion obj = new Conexion(this.oCadena);
-            return obj.consultarOut("listar_proveedor");
+            return obj.consultarOut("listadoproveedor");
         }
 
         public void insertarProveedor(string nombre, string direccion, string
-            telefono, string correo, DateTime fechaIngreso)
+            telefono, string correo, string fechaIngreso)
         {
             Conexion obj = new Conexion(this.oCadena);
             obj.conectar();
-            obj.ejecutarTransaccion("insertar_categoria",
+            obj.ejecutarTransaccion("insertar_proveedor",
              new object[] { new OracleParameter("nombre",nombre),
                  new OracleParameter("direccion",direccion),
                  new OracleParameter("telefono", telefono),
@@ -91,7 +91,38 @@ namespace DAL
             obj.desconectar();
         }
 
-<<<<<<< HEAD
+        public void ActualizarProveedor(int id, string nombre, string direccion, string
+            telefono, string correo, string fechaIngreso)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("actualizar_proveedor",
+             new object[] { new OracleParameter("idproveedor",id),
+                 new OracleParameter("nombre",nombre),
+                 new OracleParameter("direccion",direccion),
+                 new OracleParameter("telefono", telefono),
+                 new OracleParameter("correo", correo),
+                 new OracleParameter("fechaingreso", fechaIngreso),
+                 new OracleParameter("estado","1")
+                
+                });
+            obj.desconectar();
+        }
+
+
+        public void EliminarProveedor(int id)
+        {
+            Conexion obj = new Conexion(this.oCadena);
+            obj.conectar();
+            obj.ejecutarTransaccion("eliminar_proveedor",
+             new object[] { new OracleParameter("IdProveedor",id)
+                });
+            obj.desconectar();
+        }
+        #endregion
+
+        #region Producto
+
         public DataTable consultarProducto()
         {
             Conexion obj = new Conexion(this.oCadena);
@@ -108,27 +139,10 @@ namespace DAL
                  new OracleParameter("NOMBRE",NOMBRE),
                  new OracleParameter("DESCRIPCION",DESCRIPCION),
                  new OracleParameter("ESTADO","1")
-=======
-        public void ActualizarProveedor(int id, string nombre, string direccion, string
-            telefono, string correo, DateTime fechaIngreso)
-        {
-            Conexion obj = new Conexion(this.oCadena);
-            obj.conectar();
-            obj.ejecutarTransaccion("actualizar_proveedor",
-             new object[] { new OracleParameter("idproveedor",id),
-                 new OracleParameter("nombre",nombre),
-                 new OracleParameter("direccion",direccion),
-                 new OracleParameter("telefono", telefono),
-                 new OracleParameter("correo", correo),
-                 new OracleParameter("fechaingreso", fechaIngreso),
-                 new OracleParameter("estado","1")
->>>>>>> origin/master
-                
-                });
+                 });
             obj.desconectar();
         }
 
-<<<<<<< HEAD
         public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
         {
             Conexion obj = new Conexion(this.oCadena);
@@ -155,19 +169,7 @@ namespace DAL
                 });
             obj.desconectar();
         }
-
-
-=======
-        public void EliminarProveedor(int id)
-        {
-            Conexion obj = new Conexion(this.oCadena);
-            obj.conectar();
-            obj.ejecutarTransaccion("eliminar_proveedor",
-             new object[] { new OracleParameter("IdProveedor",id)
-                });
-            obj.desconectar();
-        }
         #endregion
->>>>>>> origin/master
+
     }
 }
