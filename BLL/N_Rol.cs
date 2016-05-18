@@ -9,22 +9,21 @@ using DAL;
 
 namespace BLL
 {
-    public class N_Producto
+   public  class N_Rol
     {
-         private string sCadena;
-       
-        public N_Producto(string sCadena)
+        private string sCadena;
+
+        public N_Rol(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-
-        public DataTable consultarProducto()
+        public DataTable consultarRol()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProducto();
+                return mdobj.consultarRol();
             }
             catch (Exception)
             {
@@ -33,42 +32,43 @@ namespace BLL
             }
 
         }
-        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+        public void insertarRol(string nombre)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProducto(IDCATEGORIA, IDMARCA, NOMBRE, DESCRIPCION, ESTADO);
+                mdobj.insertarRol(nombre);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al insertar Producto" + ex.Message);
+                throw new Exception("Error al insertar..." + ex.Message);
             }
 
         }
 
 
-        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        public void ActualizarRol(int idrol, string nombre)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProducto(IdProducto, IDCAT, IDMAR, NOM, DES, EST);
+                mdobj.ActualizarRol(idrol, nombre);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al Actualizar Producto" + ex.Message);
+                throw new Exception("Error al Actualizar..." + ex.Message);
             }
+
         }
 
-        public void EliminarProducto(int codigo)
+        public void eliminarRol(int idrol)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProducto(codigo);
+                mdobj.EliminarRol(idrol);
             }
             catch (Exception ex)
             {

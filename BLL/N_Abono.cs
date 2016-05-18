@@ -9,66 +9,66 @@ using DAL;
 
 namespace BLL
 {
-    public class N_Producto
+  public   class N_Abono
     {
          private string sCadena;
        
-        public N_Producto(string sCadena)
+        public N_Abono(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-
-        public DataTable consultarProducto()
+        public DataTable consultarAbono()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProducto();
+                return mdobj.consultarAbono();
             }
             catch (Exception)
             {
 
                 return null;
             }
-
+         
         }
-        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+        public void insertarAbono(int idcuentac, DateTime fecha, decimal monto )
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProducto(IDCATEGORIA, IDMARCA, NOMBRE, DESCRIPCION, ESTADO);
+                mdobj.insertarAbono(idcuentac, fecha, monto);
+            }
+            catch (Exception ex)
+            {
+                
+                throw new Exception("Error al insertar..."+ex.Message);
+            }
+        
+        }
+
+
+        public void ActualizarAbono(int idabono, int idcuentac, DateTime fecha, decimal monto  )
+        {
+            try
+            {
+                ManejoDatos mdobj = new ManejoDatos(sCadena);
+                mdobj.ActualizarAbono(idabono, idcuentac, fecha, monto);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al insertar Producto" + ex.Message);
+                throw new Exception("Error al Actualizar..." + ex.Message);
             }
 
         }
 
-
-        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        public void eliminarAbono(int idabono)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProducto(IdProducto, IDCAT, IDMAR, NOM, DES, EST);
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("Error al Actualizar Producto" + ex.Message);
-            }
-        }
-
-        public void EliminarProducto(int codigo)
-        {
-            try
-            {
-                ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProducto(codigo);
+                mdobj.EliminarAbono ( idabono);
             }
             catch (Exception ex)
             {

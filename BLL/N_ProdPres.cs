@@ -9,66 +9,67 @@ using DAL;
 
 namespace BLL
 {
-    public class N_Producto
+    public class N_ProdPres
     {
-         private string sCadena;
-       
-        public N_Producto(string sCadena)
+        private string sCadena;
+
+        public N_ProdPres(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-
-        public DataTable consultarProducto()
+        public DataTable ConsultarProdPres()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProducto();
+                return mdobj.ConsultarProdPres();
             }
             catch (Exception)
             {
 
                 return null;
             }
-
+         
         }
-        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+
+        public void insertarProdPres(int prod, int pres, decimal precioc, decimal preciov, decimal existencia, byte imagen, string barras)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProducto(IDCATEGORIA, IDMARCA, NOMBRE, DESCRIPCION, ESTADO);
+                mdobj.InsertarProdPres(prod, pres, precioc, preciov, existencia, imagen, barras);
+            }
+            catch (Exception ex)
+            {
+                
+                throw new Exception("Error al insertar..."+ex.Message);
+            }
+        
+        }
+
+
+        public void ActualizarProdPres(int idprodpres, int prod, int pres, decimal precioc, decimal preciov, decimal existencia, byte imagen, string barras)
+        {
+            try
+            {
+                ManejoDatos mdobj = new ManejoDatos(sCadena);
+                mdobj.ActualizarProdPres(idprodpres,prod,pres,precioc,preciov,existencia,imagen,barras);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al insertar Producto" + ex.Message);
+                throw new Exception("Error al Actualizar..." + ex.Message);
             }
 
         }
 
-
-        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        public void EliminarProdPres(int codigo)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProducto(IdProducto, IDCAT, IDMAR, NOM, DES, EST);
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("Error al Actualizar Producto" + ex.Message);
-            }
-        }
-
-        public void EliminarProducto(int codigo)
-        {
-            try
-            {
-                ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProducto(codigo);
+                mdobj.EliminarProdPres (codigo);
             }
             catch (Exception ex)
             {

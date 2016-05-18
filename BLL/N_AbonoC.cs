@@ -7,68 +7,69 @@ using System.Data;
 using Oracle.DataAccess.Client;
 using DAL;
 
+
 namespace BLL
 {
-    public class N_Producto
+    public class N_AbonoC
     {
-         private string sCadena;
+        private string sCadena;
        
-        public N_Producto(string sCadena)
+        public N_AbonoC(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-
-        public DataTable consultarProducto()
+        public DataTable ConsultarAbono()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProducto();
+                return mdobj.ConsultarAbonoC();
             }
             catch (Exception)
             {
 
                 return null;
             }
-
+         
         }
-        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+        public void InsertarAbono(DateTime fecha, Decimal monto)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProducto(IDCATEGORIA, IDMARCA, NOMBRE, DESCRIPCION, ESTADO);
+                mdobj.InsertarAbonoC(fecha,monto);
+            }
+            catch (Exception ex)
+            {
+                
+                throw new Exception("Error al insertar..."+ex.Message);
+            }
+        
+        }
+
+
+        public void ActualizarAbonoC(int IdAbono, int cuenta, DateTime fecha, Decimal monto)
+        {
+            try
+            {
+                ManejoDatos mdobj = new ManejoDatos(sCadena);
+                mdobj.ActualizarAbonoC(IdAbono,cuenta,fecha,monto);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al insertar Producto" + ex.Message);
+                throw new Exception("Error al Actualizar..." + ex.Message);
             }
 
         }
 
-
-        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        public void EliminarAbonoC(int codigo)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProducto(IdProducto, IDCAT, IDMAR, NOM, DES, EST);
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("Error al Actualizar Producto" + ex.Message);
-            }
-        }
-
-        public void EliminarProducto(int codigo)
-        {
-            try
-            {
-                ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProducto(codigo);
+                mdobj.EliminarAbonoC (codigo);
             }
             catch (Exception ex)
             {

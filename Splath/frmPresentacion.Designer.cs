@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDireccion = new DevExpress.XtraEditors.TextEdit();
+            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
             this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtDireccion
+            // txtDescripcion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(111, 44);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Properties.Appearance.Options.UseFont = true;
-            this.txtDireccion.Size = new System.Drawing.Size(210, 24);
-            this.txtDireccion.TabIndex = 63;
+            this.txtDescripcion.Location = new System.Drawing.Point(111, 44);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Properties.Appearance.Options.UseFont = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(210, 24);
+            this.txtDescripcion.TabIndex = 63;
             // 
             // txtNombre
             // 
@@ -94,13 +94,14 @@
             this.btnAceptar.TabIndex = 56;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // frmPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 153);
-            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -109,7 +110,7 @@
             this.Name = "frmPresentacion";
             this.Text = "frmPresentacion";
             this.Load += new System.EventHandler(this.frmPresentacion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,7 +119,7 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit txtDireccion;
+        private DevExpress.XtraEditors.TextEdit txtDescripcion;
         private DevExpress.XtraEditors.TextEdit txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

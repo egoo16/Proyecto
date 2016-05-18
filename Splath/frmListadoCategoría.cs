@@ -15,7 +15,7 @@ namespace Splath
 {
     public partial class frmListadoCategoría : Form
     {
-        N_Proveedor lnobj = new N_Proveedor(ConfigurationManager.ConnectionStrings["Oracle"].ConnectionString);
+        N_Categoria lnobj = new N_Categoria(ConfigurationManager.ConnectionStrings["Oracle"].ConnectionString);
         public static DataRow row;
         public static frmListadoCategoría list;
         int codigo;
@@ -30,7 +30,7 @@ namespace Splath
             frmCategoria frm = new frmCategoria();
             frm.transaccion = true;
             frm.ShowDialog();
-            cargarDatosProveedor();
+            cargarDatosCategoria();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -40,12 +40,12 @@ namespace Splath
 
         private void frmListadoCategoría_Load(object sender, EventArgs e)
         {
-            cargarDatosProveedor();
+            cargarDatosCategoria();
         }
 
-        public void cargarDatosProveedor()
+        public void cargarDatosCategoria()
         {
-            gridControl1.DataSource = lnobj.consultarProveedor();
+            gridControl1.DataSource = lnobj.consultarCategoria();
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
@@ -55,7 +55,15 @@ namespace Splath
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            row = gridView1.GetDataRow(gridView1.GetSelectedRows()[0]);
+            codigo = Convert.ToInt16(row[0]);
+            DialogResult result = MessageBox.Show("¿Desea eliminar este registro?", "Eliminar Categoria", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                lnobj.eliminarCategoria (codigo);
+                MessageBox.Show("La categoria se eliminó correctamente", "Categoria", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            cargarDatosCategoria();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -64,7 +72,7 @@ namespace Splath
             frmCategoria frm = new frmCategoria();
             frm.transaccion = false;
             frm.ShowDialog();
-            cargarDatosProveedor();
+            cargarDatosCategoria();
         }
     }
 }

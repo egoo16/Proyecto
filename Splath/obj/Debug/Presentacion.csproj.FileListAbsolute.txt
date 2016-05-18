@@ -26,7 +26,6 @@ D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\DAL.dll
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\BLL.pdb
 D:\Usuarios\Geovany\Documentos\Visual Studio 2012\2016\ProyectoFinalBD03\Splath\bin\Debug\DAL.pdb
-<<<<<<< HEAD
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\bin\Debug\Splath.exe.config
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.pdb
@@ -55,7 +54,6 @@ D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Properti
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Splath.resources
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe.licenses
-=======
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\bin\Debug\Splath.exe.config
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.pdb
@@ -116,14 +114,10 @@ X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Properties.Resources.resou
 X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.Splath.resources
 X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 X:\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.exe.licenses
->>>>>>> origin/master
-<<<<<<< HEAD
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ValidacionAdmin.resources
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.NotasES.resources
-=======
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.CajaApertura.resources
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmListadoUsuarios.resources
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmrol.resources
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmUsuarios.resources
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ListadoSucursales.resources
->>>>>>> origin/master

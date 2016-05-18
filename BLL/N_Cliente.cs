@@ -7,24 +7,24 @@ using System.Data;
 using Oracle.DataAccess.Client;
 using DAL;
 
+
 namespace BLL
 {
-    public class N_Producto
+   public  class N_Cliente
     {
-         private string sCadena;
-       
-        public N_Producto(string sCadena)
+        private string sCadena;
+
+        public N_Cliente(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-
-        public DataTable consultarProducto()
+        public DataTable consultarCliente()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProducto();
+                return mdobj.consultarCliente();
             }
             catch (Exception)
             {
@@ -33,42 +33,43 @@ namespace BLL
             }
 
         }
-        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+        public void insertarCliente(string nombre, string apellido, string direccion, string telefono, string nit, DateTime fechaingreso, string mayorista, string idmayorista)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProducto(IDCATEGORIA, IDMARCA, NOMBRE, DESCRIPCION, ESTADO);
+                mdobj.insertarCliente(nombre, apellido, direccion, telefono, nit, fechaingreso, mayorista, idmayorista);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al insertar Producto" + ex.Message);
+                throw new Exception("Error al insertar..." + ex.Message);
             }
 
         }
 
 
-        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        public void ActualizarCliente(int idcliente, string nombre, string apellido, string direccion, string telefono, string nit, DateTime fechaingreso, string mayorista, string idmayorista)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProducto(IdProducto, IDCAT, IDMAR, NOM, DES, EST);
+                mdobj.ActualizarCliente(idcliente, nombre, apellido, direccion, telefono, nit, fechaingreso, mayorista, idmayorista);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al Actualizar Producto" + ex.Message);
+                throw new Exception("Error al Actualizar..." + ex.Message);
             }
+
         }
 
-        public void EliminarProducto(int codigo)
+        public void eliminarCliente(int idcliente)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProducto(codigo);
+                mdobj.EliminarCliente(idcliente);
             }
             catch (Exception ex)
             {

@@ -7,24 +7,24 @@ using System.Data;
 using Oracle.DataAccess.Client;
 using DAL;
 
+
 namespace BLL
 {
-    public class N_Producto
+   public  class N_CuentaCobrar
     {
-         private string sCadena;
-       
-        public N_Producto(string sCadena)
+        private string sCadena;
+
+        public N_CuentaCobrar(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-
-        public DataTable consultarProducto()
+        public DataTable consultarCuentaCobrar()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProducto();
+                return mdobj.consultarCuentaCobrar();
             }
             catch (Exception)
             {
@@ -33,42 +33,43 @@ namespace BLL
             }
 
         }
-        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+        public void insertarCuentaCobrar(int iddetallev, DateTime fechainicio, DateTime fechalimite, decimal monto, decimal saldo, string liquidado)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProducto(IDCATEGORIA, IDMARCA, NOMBRE, DESCRIPCION, ESTADO);
+                mdobj.insertarCuentaCobrar(iddetallev, fechainicio, fechalimite, monto, saldo, liquidado);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al insertar Producto" + ex.Message);
+                throw new Exception("Error al insertar..." + ex.Message);
             }
 
         }
 
 
-        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        public void ActualizarCuentaCobrar(int idcuentac, int iddetallev, DateTime fechainicio, DateTime fechalimite, decimal monto, decimal saldo, string liquidado)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProducto(IdProducto, IDCAT, IDMAR, NOM, DES, EST);
+                mdobj.ActualizarCuentaCobrar(idcuentac, iddetallev, fechainicio, fechalimite, monto, saldo, liquidado);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al Actualizar Producto" + ex.Message);
+                throw new Exception("Error al Actualizar..." + ex.Message);
             }
+
         }
 
-        public void EliminarProducto(int codigo)
+        public void eliminarCuentaCobrar(int idcuentac)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProducto(codigo);
+                mdobj.EliminarCuentaCobrar(idcuentac);
             }
             catch (Exception ex)
             {

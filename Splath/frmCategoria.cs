@@ -83,7 +83,7 @@ namespace Splath
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)

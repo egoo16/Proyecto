@@ -79,6 +79,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(54, 54);
             this.btnEliminar.TabIndex = 22;
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -89,6 +90,7 @@
             this.btnModificar.Size = new System.Drawing.Size(54, 54);
             this.btnModificar.TabIndex = 21;
             this.btnModificar.Text = "Modificar";
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnNuevo
             // 

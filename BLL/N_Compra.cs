@@ -9,22 +9,21 @@ using DAL;
 
 namespace BLL
 {
-    public class N_Producto
+    public class N_Compra
     {
-         private string sCadena;
-       
-        public N_Producto(string sCadena)
+        private string sCadena;
+
+        public N_Compra(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-
-        public DataTable consultarProducto()
+        public DataTable consultarCompra()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProducto();
+                return mdobj.consultarCompra();
             }
             catch (Exception)
             {
@@ -33,42 +32,43 @@ namespace BLL
             }
 
         }
-        public void insertarProducto(int IDCATEGORIA, int IDMARCA, string NOMBRE, string DESCRIPCION, string ESTADO)
+        public void insertarCompra(int idusario, int idproveedor, int idpago, DateTime fechacompra, decimal total, string liquidado)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProducto(IDCATEGORIA, IDMARCA, NOMBRE, DESCRIPCION, ESTADO);
+                mdobj.insertarCompra(idusario, idproveedor, idpago, fechacompra, total, liquidado);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al insertar Producto" + ex.Message);
+                throw new Exception("Error al insertar..." + ex.Message);
             }
 
         }
 
 
-        public void ActualizarProducto(int IdProducto, int IDCAT, int IDMAR, string NOM, string DES, string EST)
+        public void ActualizarCompra(int idcompra, int idusuario, int idproveedor, int idpago, DateTime fechacompra, decimal total, string liquidado)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProducto(IdProducto, IDCAT, IDMAR, NOM, DES, EST);
+                mdobj.ActualizarCompra(idcompra, idusuario, idproveedor, idpago, fechacompra, total, liquidado);
             }
             catch (Exception ex)
             {
 
-                throw new Exception("Error al Actualizar Producto" + ex.Message);
+                throw new Exception("Error al Actualizar..." + ex.Message);
             }
+
         }
 
-        public void EliminarProducto(int codigo)
+        public void eliminarCompra(int idcompra)
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProducto(codigo);
+                mdobj.EliminarCompra(idcompra);
             }
             catch (Exception ex)
             {

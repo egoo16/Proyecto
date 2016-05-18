@@ -40,12 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="N_Abono.cs" />
+    <Compile Include="N_AbonoC.cs" />
+    <Compile Include="N_Caja.cs" />
     <Compile Include="N_Categoria.cs" />
-<<<<<<< HEAD
+    <Compile Include="N_Cliente.cs" />
+    <Compile Include="N_Compra.cs" />
+    <Compile Include="N_CuentaCobrar.cs" />
+    <Compile Include="N_CuentaPagar.cs" />
+    <Compile Include="N_DetalleC.cs" />
+    <Compile Include="N_DetalleV.cs" />
+    <Compile Include="N_Factura.cs" />
+    <Compile Include="N_Marca.cs" />
+    <Compile Include="N_Presentacion.cs" />
+    <Compile Include="N_ProdPres.cs" />
     <Compile Include="N_Producto.cs" />
-=======
     <Compile Include="N_Proveedor.cs" />
->>>>>>> origin/master
+    <Compile Include="N_Rol.cs" />
+    <Compile Include="N_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,7 +67,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

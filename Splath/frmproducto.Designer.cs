@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmproducto));
-            this.txtDireccion = new DevExpress.XtraEditors.TextEdit();
+            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
             this.txtNombre = new DevExpress.XtraEditors.TextEdit();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,18 +41,18 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.aCat = new System.Windows.Forms.Button();
             this.aMar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtDireccion
+            // txtDescripcion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(118, 45);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Properties.Appearance.Options.UseFont = true;
-            this.txtDireccion.Size = new System.Drawing.Size(210, 24);
-            this.txtDireccion.TabIndex = 48;
+            this.txtDescripcion.Location = new System.Drawing.Point(118, 45);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Properties.Appearance.Options.UseFont = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(210, 24);
+            this.txtDescripcion.TabIndex = 48;
             // 
             // txtNombre
             // 
@@ -121,6 +121,7 @@
             this.btnAceptar.TabIndex = 40;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // comboBox1
             // 
@@ -167,7 +168,7 @@
             this.Controls.Add(this.aCat);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -179,7 +180,7 @@
             this.Name = "frmproducto";
             this.Text = "Surticasa-Producto";
             this.Load += new System.EventHandler(this.frmproducto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,7 +189,7 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit txtDireccion;
+        private DevExpress.XtraEditors.TextEdit txtDescripcion;
         private DevExpress.XtraEditors.TextEdit txtNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
