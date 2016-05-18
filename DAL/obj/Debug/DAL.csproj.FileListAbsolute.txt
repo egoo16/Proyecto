@@ -20,4 +20,7 @@ X:\Documentos\GitHub\Proyecto\DAL\bin\Debug\DAL.pdb
 X:\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 X:\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.dll
 X:\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+=======
+>>>>>>> origin/master

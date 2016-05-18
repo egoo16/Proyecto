@@ -33,6 +33,8 @@
     <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +46,7 @@
     <Compile Include="N_AbonoC.cs" />
     <Compile Include="N_Caja.cs" />
     <Compile Include="N_Categoria.cs" />
+<<<<<<< HEAD
     <Compile Include="N_Cliente.cs" />
     <Compile Include="N_Compra.cs" />
     <Compile Include="N_CuentaCobrar.cs" />
@@ -58,6 +61,11 @@
     <Compile Include="N_Proveedor.cs" />
     <Compile Include="N_Rol.cs" />
     <Compile Include="N_Usuario.cs" />
+=======
+    <Compile Include="N_NotaES.cs" />
+    <Compile Include="N_Producto.cs" />
+    <Compile Include="N_Proveedor.cs" />
+>>>>>>> origin/master
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -121,3 +121,8 @@ D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmLista
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmrol.resources
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.frmUsuarios.resources
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ListadoSucursales.resources
+<<<<<<< HEAD
+=======
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.NotasES.resources
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\Splath\obj\Debug\Splath.ValidacionAdmin.resources
+>>>>>>> origin/master
