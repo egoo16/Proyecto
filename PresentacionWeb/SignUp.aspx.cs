@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 using MySql.Data.MySqlClient;
@@ -30,15 +29,19 @@ namespace PresentacionWeb
                 if (tbPass.Text == tbCPass.Text)
                 {
                     String cs = ConfigurationManager.ConnectionStrings["MySQL"].ConnectionString;
-                    using (SqlConnection con = new SqlConnection(cs))
+                    using (MySqlConnection con = new MySqlConnection(cs))
                     {
-                        SqlCommand cmd = new SqlCommand("insertarUsuario");
+                        con.Open();
+
+                        MySqlCommand cmd = new MySqlCommand("insertarUsuario");
+                        cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("PC_NOMUSUARIO", tbUname.Text);
                         cmd.Parameters.AddWithValue("PC_PASSWORD", tbPass.Text);
-                        cmd.Parameters.AddWithValue("PC_ESTADO", "1");
+                        cmd.Parameters.AddWithValue("PC_ESTADO", true);
                         cmd.Connection = con;
 
-                        SqlCommand cm = new SqlCommand("insertarCliente");
+                        MySqlCommand cm = new MySqlCommand("insertarCliente");
+                        cm.CommandType = CommandType.StoredProcedure;
                         cm.Parameters.AddWithValue("PC_NOMBRE", tbName.Text);
                         cm.Parameters.AddWithValue("PC_APELLIDO", tbLName.Text);
                         cm.Parameters.AddWithValue("PC_DIRECCION", tbAddress.Text);
@@ -47,19 +50,18 @@ namespace PresentacionWeb
                         cm.Parameters.AddWithValue("PC_FECHAI", DateTime.Today);
                         if (tbMayorista.Text != "")
                         {
-                            cm.Parameters.AddWithValue("PC_MAYORISTA", "1");
+                            cm.Parameters.AddWithValue("PC_MAYORISTA", true);
                             cm.Parameters.AddWithValue("PC_IDMAYORISTA", tbMayorista.Text);
                         }
                         else
                         {
-                            cm.Parameters.AddWithValue("PC_MAYORISTA", "0");
+                            cm.Parameters.AddWithValue("PC_MAYORISTA", false);
                             cm.Parameters.AddWithValue("PC_IDMAYORISTA", null);
                         }
 
-                        cm.Parameters.AddWithValue("PC_ESTADO", "1");
-                        //cm.Connection = con;
+                        cm.Parameters.AddWithValue("PC_ESTADO", true);
+                        cm.Connection = con;
 
-                        con.Open();
                         cmd.ExecuteNonQuery();
                         cm.ExecuteNonQuery();
                         lblMsg.CssClass = "text-success";

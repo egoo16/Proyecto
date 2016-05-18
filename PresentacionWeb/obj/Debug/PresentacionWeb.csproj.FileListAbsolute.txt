@@ -8,3 +8,4 @@ D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\bin\Presentacion
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.csprojResolveAssemblyReference.cache
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.dll
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.pdb
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\bin\MySql.Data.dll

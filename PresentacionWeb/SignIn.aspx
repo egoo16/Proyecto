@@ -76,7 +76,7 @@
                 <div class="form-group">
                     <div class="col-md-2"></div>
                     <div class="col-md-6">
-                        <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" CssClass="btn btn-success" />
+                        <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" CssClass="btn btn-success" OnClick="Button1_Click1" />
                     </div>
                 </div>
                 <div class="form-group">
