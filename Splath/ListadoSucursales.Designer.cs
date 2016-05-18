@@ -80,6 +80,7 @@
             this.btnNuevo.Size = new System.Drawing.Size(62, 69);
             this.btnNuevo.TabIndex = 21;
             this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // gridControl1
             // 

@@ -1,13 +1,11 @@
-<<<<<<< HEAD
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\PresentacionWeb\bin\PresentacionWeb.dll
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\PresentacionWeb\bin\PresentacionWeb.pdb
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.csprojResolveAssemblyReference.cache
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.dll
 D:\Usuarios\Geovany\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.pdb
-=======
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\bin\PresentacionWeb.dll
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\bin\PresentacionWeb.pdb
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.csprojResolveAssemblyReference.cache
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.dll
 D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\obj\Debug\PresentacionWeb.pdb
->>>>>>> origin/master
+D:\Usuarios\Jhonatan\Documentos\GitHub\Proyecto\PresentacionWeb\bin\MySql.Data.dll

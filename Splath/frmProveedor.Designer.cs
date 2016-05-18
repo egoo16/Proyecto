@@ -34,17 +34,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.txtCorreo = new DevExpress.XtraEditors.TextEdit();
+            this.txtTelefono = new DevExpress.XtraEditors.TextEdit();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.CalcEdit();
+            this.txtFecha = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCorreo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFecha.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFecha.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDireccion
@@ -109,25 +110,25 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // textEdit4
+            // txtCorreo
             // 
-            this.textEdit4.Location = new System.Drawing.Point(109, 123);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Size = new System.Drawing.Size(210, 24);
-            this.textEdit4.TabIndex = 90;
-            this.textEdit4.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
+            this.txtCorreo.Location = new System.Drawing.Point(109, 123);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Properties.Appearance.Options.UseFont = true;
+            this.txtCorreo.Size = new System.Drawing.Size(210, 24);
+            this.txtCorreo.TabIndex = 90;
+            this.txtCorreo.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
             // 
-            // textEdit5
+            // txtTelefono
             // 
-            this.textEdit5.Location = new System.Drawing.Point(109, 88);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Size = new System.Drawing.Size(210, 24);
-            this.textEdit5.TabIndex = 89;
-            this.textEdit5.EditValueChanged += new System.EventHandler(this.textEdit5_EditValueChanged);
+            this.txtTelefono.Location = new System.Drawing.Point(109, 88);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Properties.Appearance.Options.UseFont = true;
+            this.txtTelefono.Size = new System.Drawing.Size(210, 24);
+            this.txtTelefono.TabIndex = 89;
+            this.txtTelefono.EditValueChanged += new System.EventHandler(this.textEdit5_EditValueChanged);
             // 
             // label3
             // 
@@ -161,24 +162,27 @@
             this.label5.TabIndex = 91;
             this.label5.Text = "Ingreso";
             // 
-            // textEdit1
+            // txtFecha
             // 
-            this.textEdit1.Location = new System.Drawing.Point(109, 154);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtFecha.EditValue = null;
+            this.txtFecha.Location = new System.Drawing.Point(109, 154);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.textEdit1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit1.TabIndex = 92;
+            this.txtFecha.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtFecha.Size = new System.Drawing.Size(100, 20);
+            this.txtFecha.TabIndex = 92;
             // 
             // frmProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(356, 273);
+            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit5);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDireccion);
@@ -187,15 +191,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.textEdit1);
             this.Name = "frmProveedor";
             this.Text = "frmProveedor";
             this.Load += new System.EventHandler(this.frmProveedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCorreo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefono.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFecha.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFecha.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,11 +213,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txtCorreo;
+        private DevExpress.XtraEditors.TextEdit txtTelefono;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private DevExpress.XtraEditors.CalcEdit textEdit1;
+        private DevExpress.XtraEditors.DateEdit txtFecha;
     }
 }

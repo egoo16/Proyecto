@@ -9,21 +9,21 @@ using DAL;
 
 namespace BLL
 {
-    public class N_Proveedor
+    public class N_NotaES
     {
         private string sCadena;
-       
-        public N_Proveedor(string sCadena)
+
+        public N_NotaES(string sCadena)
         {
             this.sCadena = sCadena;
         }
 
-        public DataTable consultarProveedor()
+        public DataTable consultarNotaES()
         {
             ManejoDatos mdobj = new ManejoDatos(sCadena);
             try
             {
-                return mdobj.consultarProveedor();
+                return mdobj.consultarCategoria();
             }
             catch (Exception)
             {
@@ -32,14 +32,14 @@ namespace BLL
             }
          
         }
-        public void insertarProveedor(string nombre, string direccion, string telefono,
-            string correo, string fechaIngreso
+        public void insertarNotaES(string nombre,
+            string descripcion
            )
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.insertarProveedor(nombre, direccion, telefono, correo, fechaIngreso);
+                mdobj.insertarCategoria(nombre, descripcion);
             }
             catch (Exception ex)
             {
@@ -50,14 +50,14 @@ namespace BLL
         }
 
 
-        public void ActualizarProveedor(int codigo, string nombre, string direccion, string telefono,
-            string correo, string fechaIngreso
-           )
+        public void ActualizarCategoria(int codigo, string nombre,
+           string descripcion
+          )
         {
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.ActualizarProveedor(codigo, nombre, direccion, telefono, correo, fechaIngreso);
+                mdobj.ActualizarCategoria(codigo, nombre, descripcion);
             }
             catch (Exception ex)
             {
@@ -72,7 +72,7 @@ namespace BLL
             try
             {
                 ManejoDatos mdobj = new ManejoDatos(sCadena);
-                mdobj.EliminarProveedor(codigo);
+                mdobj.EliminarCategoria (codigo);
             }
             catch (Exception ex)
             {

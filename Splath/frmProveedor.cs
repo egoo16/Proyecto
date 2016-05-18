@@ -42,9 +42,12 @@ namespace Splath
             }
             else
             {
-                codigo = Convert.ToInt16(frmListadoCategoría.row[0]);
-                txtNombre.Text = frmListadoCategoría.row[1].ToString();
-                textEdit1.Text = frmListadoCategoría.row[2].ToString();
+                codigo = Convert.ToInt16(frmListadoProveedor.row[0]);
+                txtNombre.Text = frmListadoProveedor.row[1].ToString();
+                txtDireccion.Text = frmListadoProveedor.row[2].ToString();
+                txtTelefono.Text = frmListadoProveedor.row[3].ToString();
+                txtCorreo.Text = frmListadoProveedor.row[4].ToString();
+                txtFecha.Text = frmListadoProveedor.row[5].ToString();
             }
         }
 
@@ -90,7 +93,27 @@ namespace Splath
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            string nombre, direccion, telefono, correo, fecha;
+            //Validar todos los datos de entrada
+            nombre = txtNombre.Text;
+            direccion = txtDireccion.Text;
+            telefono = txtTelefono.Text;
+            correo = txtCorreo.Text;
+            fecha = txtFecha.Text;
 
+            if (transaccion)
+            {
+                //nuevo Proveedor
+                lnobj.insertarProveedor(nombre, direccion, telefono, correo, fecha);
+            }
+            else
+            {
+                //modificacion de proveedor
+                lnobj.ActualizarProveedor(codigo, nombre, direccion, telefono, correo, fecha);
+            }
+            MessageBox.Show("El Proveedor se inserto correctamente", "Proveedor", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            this.Close();
         }
     }
 }
